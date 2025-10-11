@@ -1,0 +1,15 @@
+body { font-family: 'Consolas', monospace; background-color: #000000; color: #00e0ff; line-height: 1.6; margin: 0; padding: 0; height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative; }
+#background-video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -3; background-size: cover; filter: brightness(0.3) blur(5px) hue-rotate(200deg); }
+.grid-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(0deg, transparent 9px, rgba(0, 224, 255, 0.1) 10px), linear-gradient(90deg, transparent 9px, rgba(0, 224, 255, 0.1) 10px); background-size: 10px 10px; z-index: -2; opacity: 0.5; }
+.profile-container { text-align: center; padding: 30px; background: rgba(0, 0, 0, 0.4); border-radius: 15px; box-shadow: 0 0 50px rgba(0, 224, 255, 0.3); z-index: 10; position: relative; }
+.main-video-avatar { margin: 0 auto 20px auto; width: 150px; height: 150px; border-radius: 50%; overflow: hidden; position: relative; box-shadow: 0 0 0 5px #00e0ff, 0 0 20px #00e0ff; border: 3px solid #00e0ff; }
+.main-video-avatar video { width: 100%; height: 100%; object-fit: cover; }
+h1 { font-size: 2.2em; color: #ffffff; text-shadow: 0 0 10px #00e0ff; margin: 10px 0 5px 0; letter-spacing: 2px; }
+.profile-container p { font-size: 1.1em; color: #888888; margin-bottom: 30px; }
+.badge-icons { list-style: none; padding: 0; display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+.badge-icons li a { font-size: 1.5em; color: #00e0ff; text-shadow: 0 0 5px #00e0ff; transition: transform 0.2s; text-decoration: none; }
+.badge-icons li a:hover { transform: scale(1.1); color: #ffffff; }
+.status-area { margin-top: 20px; font-size: 0.9em; color: #a0a0a0; text-shadow: none; }
+.neon-button { background: transparent; color: #00e0ff; border: 2px solid #00e0ff; padding: 10px 20px; font-size: 1em; cursor: pointer; border-radius: 8px; margin: 15px 0; transition: all 0.3s; text-shadow: 0 0 5px rgba(0, 224, 255, 0.7); box-shadow: 0 0 10px rgba(0, 224, 255, 0.5); font-family: 'Consolas', monospace; }
+.neon-button:hover { background-color: #00e0ff; color: #000000; text-shadow: none; box-shadow: 0 0 20px #00e0ff; }
+.neon-button.playing { background-color: #00e0ff; color: #000000; font-weight: bold; }
